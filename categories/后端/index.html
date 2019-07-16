@@ -186,85 +186,15 @@
     <section class="article-body markdown-body">
         
         <pre><code>概念:建造者(Builder)模式,将一个复杂对象的构造与它的表示分离,
-    使得同样的构建过程可以创建不同的表示</code></pre><p><code>&lt;!--more--&gt;</code> </p>
-<p><img src="/builder.PNG" alt></p>
-<p>一.定义Product类，里面用一个List存储product对象的各个部分</p>
-<pre><code>public class Product {
-    private List&lt;String&gt; parts = new ArrayList&lt;&gt;();
-
-    //添加产品部件
-    public void add(String part) {
-        parts.add(part);
-    }
-
-    //展示所有的产品部件
-    public void show() {
-        for (String s : parts) {
-            System.out.println(&quot;展示部件: &quot; + s);
-        }
-    }
-}</code></pre><p>二.定义Builder接口</p>
-<pre><code>public interface Builder {
-    void builderPartA();
-    void builderPartB();
-    Product getResult();
-}</code></pre><p>三.定义ConcreateBuilder1</p>
-<pre><code>public class ConcreateBuilder1 implements Builder {
-    private Product product = new Product();
-
-    //为产品添加部件A
-    @Override
-    public void builderPartA() {
-        product.add(&quot;添加部件A&quot;);
-    }
-
-    //为产品添加部件B
-    @Override
-    public void builderPartB() {
-        product.add(&quot;添加部件B&quot;);
-    }
-
-    @Override
-    public Product getResult() {
-        return product;
-    }
-}</code></pre><p>四.定义ConcreateBuilder2</p>
-<pre><code>public class ConcreateBuilder2 implements Builder {
-    private Product product = new Product();
-
-    //为产品添加部件X
-    @Override
-    public void builderPartA() {
-        product.add(&quot;添加部件X&quot;);
-    }
-
-    //为产品添加部件Y
-    @Override
-    public void builderPartB() {
-        product.add(&quot;添加部件Y&quot;);
-    }
-
-    @Override
-    public Product getResult() {
-        return product;
-    }
-}</code></pre><p>五.定义Director</p>
-<pre><code>public class Director {
-    public void builder(Builder builder) {
-        builder.builderPartA();
-        builder.builderPartB();
-    }
-}</code></pre><p>六.编写测试类</p>
-<pre><code>public class Test2 {
-    public static void main(String[] args) {
-        Director director = new Director();
-        Builder builder1 = new ConcreteBuilder1();
-        director.builder(builder1);
-
-        Product p1 = builder1.getResult();
-        p1.show();
-    }
-}</code></pre>
+    使得同样的构建过程可以创建不同的表示</code></pre>
+        
+        <p class="article-more-link">
+            <a href="/2018/08/31/建造者模式/#more">
+                <span class="vm">阅读更多</span>
+                <i class="icon-arrow-double-right vm"></i>    
+            </a>
+        </p>
+        
         
     </section>
 </article>
