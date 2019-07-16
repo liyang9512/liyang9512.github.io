@@ -11,7 +11,7 @@
     <meta name="author" content="Liyang">
     <meta name="version" content="1.0.0">
     <meta name="keywords" content>
-    <meta name="description" content="概念:建造者(Builder)模式,将一个复杂对象的构造与它的表示分离,    使得同样的构建过程可以创建不同的表示构建者设计图一.定义Product类，里面用一个List存储product对象的各个部分public class Product {    private List&amp;lt;String&amp;gt; parts = new ArrayList&amp;lt;&amp;gt;();    //添加产品部件    public void add(String part) {    ...">
+    <meta name="description" content="概念:建造者(Builder)模式,将一个复杂对象的构造与它的表示分离,    使得同样的构建过程可以创建不同的表示&amp;lt;!--more--&amp;gt; 一.定义Product类，里面用一个List存储product对象的各个部分public class Product {    private List&amp;lt;String&amp;gt; parts = new ArrayList&amp;lt;&amp;gt;();    //添加产品部件    public void add(String p...">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 
@@ -152,9 +152,8 @@
     <section class="article-body markdown-body">
         
         <pre><code>概念:建造者(Builder)模式,将一个复杂对象的构造与它的表示分离,
-    使得同样的构建过程可以创建不同的表示
-
-构建者设计图</code></pre><p><img src="/builder.PNG" alt></p>
+    使得同样的构建过程可以创建不同的表示</code></pre><p><code>&lt;!--more--&gt;</code> </p>
+<p><img src="/builder.PNG" alt></p>
 <p>一.定义Product类，里面用一个List存储product对象的各个部分</p>
 <pre><code>public class Product {
     private List&lt;String&gt; parts = new ArrayList&lt;&gt;();
