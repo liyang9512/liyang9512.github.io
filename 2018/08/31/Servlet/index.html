@@ -7,16 +7,16 @@
 
     
 
-    <title>Archives: 2019/7 | liyang blog</title>
+    <title>Servlet | Liyang|blog</title>
     <meta name="author" content="Liyang">
     <meta name="version" content="1.0.0">
     <meta name="keywords" content>
-    <meta name="description" content>
+    <meta name="description" content="Servlet​     Servlet（Server Applet）是Java Servlet的简称，称为小服务程序或服务连接器，用Java编写的服务器端程序，具有独立于平台和协议的特性，主要功能在于交互式地浏览和生成数据，生成动态Web内容。​     狭义的Servlet是指Java语言实现的一个接口，广义的Servlet是指任何实现了这个Servlet接口的类，一般情况下，人们将Servlet理解为后者。Servlet运行于支持Java的应用服务器中。从原理上讲，Servlet...">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 
     
-    <link rel="alternate" href="/atom.xml" title="liyang blog" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="Liyang|blog" type="application/atom+xml">
     
     
     <link rel="icon" href="/images/favicon.ico">
@@ -31,7 +31,7 @@
     <div id="nav" class="nav">
     <div class="nav-mobile">
         <button id="open-panel" class="open-panel nav-mobile-item"><i class="icon-documents"></i></button>
-        <h1 class="nav-mobile-title nav-mobile-item">liyang blog</h1>
+        <h1 class="nav-mobile-title nav-mobile-item">Liyang|blog</h1>
         <button id="open-menus" class="open-panel nav-mobile-item"><i class="icon-library"></i></button>
     </div>
 
@@ -41,16 +41,16 @@
                 <span class="nav-text">首页</span>
             </a>
         
-            <a class="nav-item" href="/tags/">
-                <span class="nav-text">标签</span>
-            </a>
-        
             <a class="nav-item" href="/categories/">
                 <span class="nav-text">分类</span>
             </a>
         
-            <a class="nav-item active" href="/archives/">
-                <span class="nav-text">归档</span>
+            <a class="nav-item" href="/tags/">
+                <span class="nav-text">标签</span>
+            </a>
+        
+            <a class="nav-item" href="/archives/">
+                <span class="nav-text">时间</span>
             </a>
         
             <a class="nav-item" href="/about">
@@ -67,18 +67,20 @@
 
         
         
+        
+        
 
         
         <div class="author-meta">
             
             <div class="author-avatar">
                 <a href="/">
-                    <img src="/images/avatar.jpg" title="李洋">
+                    <img src="/images/avatar.jpg" title="Liyang">
                 </a>
             </div>
             
-            <div class="author-name">李洋</div>
-            <div class="author-work">Java程序员</div>
+            <div class="author-name">Liyang</div>
+            <div class="author-work">Java小码农</div>
             <div class="author-location">
                 <i class="icon-location vm"></i>
                 <span class="vm">江苏南京</span>
@@ -121,45 +123,75 @@
 
 </header>
 
-        <div id="content" class="content">
-
-
+        <div id="content" class="content"><article class="article" itemscope itemprop="blogPost">
     
-    
-    
-    
-    
-    <section class="archives-wrap">
-    <div class="archive-year-wrap">
-    <a href="/archives/2019/07" class="page-hd">
-        2019/07
-    </a>
-    </div>
-    <ol class="archives">
-    
-
-    <li class="archive-section-item">
+    <header class="article-header">
         
-<article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <header class="archive-article-header">
-            <a class="archive-article-link" href="/2019/07/16/测试文章/">测试文章</a>
-            <span class="archive-article-date">
-                (<a class="article-date" href="/archives/2019/07">
+        <h1 itemprop="name">
+            Servlet
+        </h1>
+        
+        <div class="article-meta clearfix">
+            <a class="article-date" href="http://yoursite.com/2018/08/31/Servlet/index.html">
     
-    <time datetime="2019-07-16T10:38:09.000Z" itemprop="datePublished">7/16</time>
+    <i class="icon-calendar"></i>
+    
+    <time datetime="2018-08-31T09:54:54.000Z" itemprop="datePublished">2018-08-31</time>
 </a>
-)
-            </span>
-        </header>
-    </div>
+
+            
+
+        </div>
+    </header>
+    
+    <section class="article-body markdown-body">
+        
+        <p><strong>Servlet</strong></p>
+<p>​     Servlet（Server Applet）是<a href="https://baike.baidu.com/item/Java/85979" target="_blank" rel="noopener">Java</a> Servlet的简称，称为小服务程序或服务连接器，用Java编写的<a href="https://baike.baidu.com/item/%E6%9C%8D%E5%8A%A1%E5%99%A8/100571" target="_blank" rel="noopener">服务器</a>端程序，具有独立于平台和<a href="https://baike.baidu.com/item/%E5%8D%8F%E8%AE%AE/13020269" target="_blank" rel="noopener">协议</a>的特性，主要功能在于交互式地浏览和生成数据，生成动态<a href="https://baike.baidu.com/item/Web/150564" target="_blank" rel="noopener">Web</a>内容。</p>
+<p>​     狭义的Servlet是指Java语言实现的一个接口，广义的Servlet是指任何实现了这个Servlet接口的类，一般情况下，人们将Servlet理解为后者。Servlet运行于支持Java的应用服务器中。从原理上讲，Servlet可以响应任何类型的请求，但绝大多数情况下Servlet只用来扩展基于HTTP协议的Web服务器。</p>
+<a id="more"></a>
+
+<p><strong>执行原理：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">1.当服务器接收到客户端浏览器的请求后，会解析请求URL路径，获取访问的Servlet的资源路径</span><br><span class="line"></span><br><span class="line">2.查找web.xml文件，是否有对应的&lt;url-pattern&gt;标签体内容。</span><br><span class="line"></span><br><span class="line">3.如果有，则在找到对应的&lt;servlet-class&gt;全类名</span><br><span class="line"></span><br><span class="line">4.tomcat会将字节码文件加载进内存，并且创建其对象</span><br><span class="line"></span><br><span class="line">5.调用其方法</span><br></pre></td></tr></table></figure>
+
+<p>Servlet中有init service destroy 等方法 分别是创建 提供服务 和销毁 一般只用service  创建和销毁只执行一次</p>
+<p>Servlet 3.0 开始支持注解配置。可以不需要web.xml了。 @WebServlet(“资源路径”)</p>
+<p>一个Servlet可以定义多个访问路径 ： @WebServlet({“/d4”,”/dd4”,”/ddd4”})</p>
+<p><strong>路径定义规则：</strong></p>
+<pre><code>1. /xxx：路径匹配
+2. /xxx/xxx:多层路径，目录结构
+3. *.do：扩展名匹配</code></pre><p><strong>Servlet的体系结构</strong></p>
+<p>​    Servlet – 接口<br>​        |<br>​    GenericServlet – 抽象类<br>​        |<br>​    HttpServlet  – 抽象类</p>
+<pre><code>* GenericServlet：将Servlet接口中其他的方法做了默认空实现，只将service()方法作为抽象
+    * 将来定义Servlet类时，可以继承GenericServlet，实现service()方法即可
+
+* HttpServlet：对http协议的一种封装，简化操作
+    1. 定义类继承HttpServlet
+    2. 复写doGet/doPost方法</code></pre>
+        
+    </section>
 </article>
-    </li>
 
 
-</ol></section>
 
-
+<div class="comments">
+    <div id="comments"></div>
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+    new Gitalk({
+        clientID: "8c61d7ad10b98cd5741b",
+        clientSecret: "b7c3b8064812fe2f844208965827f78320bb096d",
+        repo: "liyang9512.github.io",
+        owner: "liyang9512",
+        admin: ["liyang9512"],
+        id: "2018/08/31/Servlet",
+        distractionFreeMode: true,
+        title: "Servlet",
+        body: "http://yoursite.com/2018/08/31/Servlet/",
+        labels: []
+    }).render('comments');
+    </script>
+</div>
 
 </div>
         <footer class="footer">
@@ -221,6 +253,11 @@
         }
     });
     </script>
+    
+        <script type="text/javascript" src="/js/scrollspy.min.js"></script>
+        <script type="text/javascript">
+        $(document.body).scrollspy({target: '#aside-inner'});
+        </script>
     
 
 </body>

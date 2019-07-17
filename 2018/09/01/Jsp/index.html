@@ -7,16 +7,16 @@
 
     
 
-    <title>测试文章 | liyang blog</title>
+    <title>Jsp | Liyang|blog</title>
     <meta name="author" content="Liyang">
     <meta name="version" content="1.0.0">
     <meta name="keywords" content>
-    <meta name="description" content="测试文章内容">
+    <meta name="description" content="Jsp     Java Server Pages： java服务器端页面         可以理解为：一个特殊的页面，其中既可以指定定义html标签，又可以定义java代码         用于简化书写 JSP原理SP本质上就是一个ServletJSP的脚本：JSP定义Java代码的方式     1. &amp;lt;%  代码 %&amp;gt;：定义的java代码，在service方法中。service方法中可以定义什么，该脚本中就可以定义什。     2. &amp;lt;%! 代码 %&amp;gt;：...">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 
     
-    <link rel="alternate" href="/atom.xml" title="liyang blog" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="Liyang|blog" type="application/atom+xml">
     
     
     <link rel="icon" href="/images/favicon.ico">
@@ -31,7 +31,7 @@
     <div id="nav" class="nav">
     <div class="nav-mobile">
         <button id="open-panel" class="open-panel nav-mobile-item"><i class="icon-documents"></i></button>
-        <h1 class="nav-mobile-title nav-mobile-item">liyang blog</h1>
+        <h1 class="nav-mobile-title nav-mobile-item">Liyang|blog</h1>
         <button id="open-menus" class="open-panel nav-mobile-item"><i class="icon-library"></i></button>
     </div>
 
@@ -41,16 +41,16 @@
                 <span class="nav-text">首页</span>
             </a>
         
-            <a class="nav-item" href="/tags/">
-                <span class="nav-text">标签</span>
-            </a>
-        
             <a class="nav-item" href="/categories/">
                 <span class="nav-text">分类</span>
             </a>
         
+            <a class="nav-item" href="/tags/">
+                <span class="nav-text">标签</span>
+            </a>
+        
             <a class="nav-item" href="/archives/">
-                <span class="nav-text">归档</span>
+                <span class="nav-text">时间</span>
             </a>
         
             <a class="nav-item" href="/about">
@@ -75,12 +75,12 @@
             
             <div class="author-avatar">
                 <a href="/">
-                    <img src="/images/avatar.jpg" title="李洋">
+                    <img src="/images/avatar.jpg" title="Liyang">
                 </a>
             </div>
             
-            <div class="author-name">李洋</div>
-            <div class="author-work">Java程序员</div>
+            <div class="author-name">Liyang</div>
+            <div class="author-work">Java小码农</div>
             <div class="author-location">
                 <i class="icon-location vm"></i>
                 <span class="vm">江苏南京</span>
@@ -128,30 +128,50 @@
     <header class="article-header">
         
         <h1 itemprop="name">
-            测试文章
+            Jsp
         </h1>
         
         <div class="article-meta clearfix">
-            <a class="article-date" href="http://yoursite.com/2019/07/16/测试文章/index.html">
+            <a class="article-date" href="http://yoursite.com/2018/09/01/Jsp/index.html">
     
     <i class="icon-calendar"></i>
     
-    <time datetime="2019-07-16T10:38:09.000Z" itemprop="datePublished">2019-07-16</time>
+    <time datetime="2018-09-01T07:53:07.000Z" itemprop="datePublished">2018-09-01</time>
 </a>
 
             
-<div class="article-tag-list">
-    <i class="icon-tag"></i>
-    <a class="article-tag-link" href="/tags/设计模式/">设计模式</a>
-</div>
-
 
         </div>
     </header>
     
     <section class="article-body markdown-body">
         
-        <p>测试文章内容</p>
+        <p><strong>Jsp</strong><br>     Java Server Pages： java服务器端页面<br>         可以理解为：一个特殊的页面，其中既可以指定定义html标签，又可以定义java代码<br>         用于简化书写</p>
+<a id="more"></a>
+
+<p> <strong>JSP原理</strong><br>SP本质上就是一个Servlet</p>
+<p>JSP的脚本：JSP定义Java代码的方式<br>     1. &lt;%  代码 %&gt;：定义的java代码，在service方法中。service方法中可以定义什么，该脚本中就可以定义什。<br>     2. &lt;%! 代码 %&gt;：定义的java代码，在jsp转换后的java类的成员位置。<br>     3. &lt;%= 代码 %&gt;：定义的java代码，会输出到页面上。输出语句中可以定义什么，该脚本中就可以定义什么。</p>
+<p> <strong>JSP的内置对象</strong><br>     在jsp页面中不需要获取和创建，可以直接使用的对象<br>     jsp一共有9个内置对象。</p>
+<p><img src="D:/Program%20Files%20%28x86%29/YNote/ly.8688@163.com/a78fc9a8c6ae47cd9ab19cb74b7040b5/81bbdb1020264c8d8e89ba0084ee2943.jpg" alt="img"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">其中前四个为域对象，可以用来共享数据，范围从上到下依次变大 </span><br><span class="line"></span><br><span class="line">其中out：字符输出流对象。可以将数据输出到页面上。和response.getWriter()类似</span><br><span class="line"></span><br><span class="line">response.getWriter()和out.write()的区别：</span><br><span class="line">		 在tomcat服务器真正给客户端做出响应之前，会先找response缓冲区数据，再找out缓冲区数据。</span><br><span class="line">		 response.getWriter()数据输出永远在out.write()之前</span><br></pre></td></tr></table></figure>
+
+<p><strong>指令</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">1. page	 配置JSP页面</span><br><span class="line">		* contentType：等同于response.setContentType()</span><br><span class="line">			1. 设置响应体的mime类型以及字符集</span><br><span class="line">			2. 设置当前jsp页面的编码</span><br><span class="line">         （只能是高级的IDE才能生效，如果使用低级工具，则需要设置pageEncoding属性设置当前页面的字符集）</span><br><span class="line">		* import：导包</span><br><span class="line">		* errorPage：当前页面发生异常后，会自动跳转到指定的错误页面</span><br><span class="line">		* isErrorPage：标识当前也是是否是错误页面。</span><br><span class="line">				* true：是，可以使用内置对象exception</span><br><span class="line">				* false：否。默认值。不可以使用内置对象exception</span><br><span class="line">2. include：页面包含 导入页面的资源文件</span><br><span class="line">		* &lt;%@include file=&quot;top.jsp&quot;%&gt;</span><br><span class="line">3. taglib：导入资源</span><br><span class="line">		* &lt;%@ taglib prefix=&quot;c&quot; uri=&quot;http://java.sun.com/jsp/jstl/core&quot; %&gt;</span><br><span class="line">				* prefix：前缀，自定义的</span><br></pre></td></tr></table></figure>
+
+<p><strong>动态包含静态包含：</strong></p>
+<p>静态包含：&lt;%@include file=”被包含页面”%&gt;</p>
+<p>动态包含：&lt;jsp:include page=”被包含页面” flush=”true”&gt;。</p>
+<p><strong>区别:</strong></p>
+<p>&lt;%@ include file=” ”%&gt;是指令元素。&lt;jsp:include page=” ”/&gt;是行为元素</p>
+<p>静态包含在转换成为java文件的时候将包含文件的内容“复制”到主体文件，然后作为一个整体编译。最终编译为一个java文件。</p>
+<p>动态包含是各个jsp文件分别转换，分别编译。最终编程成多个java文件。</p>
+<p>静态包含发生在：JSP—-&gt;java文件阶段。</p>
+<p>动态包含发生在：执行class文件阶段。动态加入。</p>
+<p>静态包含在两个文件中不能有相同的变量，动态包含允许。<br>由于静态包含相当于将包含文件内容直接复制到主体文件中，如果出现相同的变量，就会出现覆盖等问题，导致文件出错。而动态包含相当于调用不同的jsp，变量所在的空间不同，自然不会出现覆盖等现象。</p>
+<p>无论是动态包含还是静态包含，其request对象都是相同的。也就是同一个request对象。<br>静态包含最终编译成一个java文件，有一个request对象很好理解。而动态包含最终编译成多个jsp文件，为何会使用一个request对象呢？其实这些jsp组合的过程是一个请求转发的过程，自然也使用同一个request对象了。</p>
+<p><strong>注释:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">html注释：</span><br><span class="line">	&lt;!-- --&gt;:只能注释html代码片段</span><br><span class="line"></span><br><span class="line">jsp注释：推荐使用</span><br><span class="line">	&lt;%-- --%&gt;：可以注释所有</span><br></pre></td></tr></table></figure>
+
 
         
     </section>
@@ -169,11 +189,11 @@
         repo: "liyang9512.github.io",
         owner: "liyang9512",
         admin: ["liyang9512"],
-        id: "2019/07/16/测试文章",
+        id: "2018/09/01/Jsp",
         distractionFreeMode: true,
-        title: "测试文章",
-        body: "http://yoursite.com/2019/07/16/测试文章/",
-        labels: ["设计模式"]
+        title: "Jsp",
+        body: "http://yoursite.com/2018/09/01/Jsp/",
+        labels: []
     }).render('comments');
     </script>
 </div>
